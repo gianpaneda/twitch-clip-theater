@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  height: 100%;
+  background: #00B1F2;
+}
+
+body {
+  text-align: center;
+  font-family: 'Roboto Condensed';
+  color: #f2f2f2;
+  transition: ease-out .3s;
+}
+
+#app {
+  display: flex;
+}
+
+#instructions {
+  font-size: 65px;
+}
+
+#clip {
+  margin: -10px auto;
+  display: none;
+  background-color: black;
+  padding: 60px;
+}
+
+#boxArt {
+  margin-top: -10px;
+  height: 100%;
+  padding: 0px 25px 25px 25px;
+  width: 100%;
+  background-color: #2E2E2E;
+  transition: ease-out .3s;
+}
+
+#boxArt div {
+  white-space: wrap;
+  margin-bottom: 10px;
+  text-align: center;
+  margin: 0px;
+  display: inline-block;
+  width: 150px;
+}
+
+#boxArt div img {
+  max-height: 200px;
+  width: auto;
+}
+
+#boxArt div:hover {
+  transform: scale(1.1);
+  transition: all .3s;
+}
+
+#boxArt div img:active {
+  transform: scale(.9);
+  transition: all .1s;
+}
+
+#boxArt div: {
+  transform: scale(1.1);
+  transition: all .3s;
+}
+
+button {
+  color: #f2f2f2;
+  border-style: none;
+  outline: none;
+}
+
+.scroll-button {
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: top;
+  height: 200px;
+  width: 60px;
+}
+
+.scroll-button:hover {
+  transform: scale(1.1);
+  transition: all .3s;
+}
+
+#scrollRight {
+  background: red;
+  background: -webkit-linear-gradient(-90deg, #2E2E2E, #f2f2f2);
+  background: -o-linear-gradient(-90deg, #2E2E2E, #f2f2f2);
+  background: -moz-linear-gradient(-90deg, #2E2E2E, #f2f2f2);
+  background: linear-gradient(-90deg, #2E2E2E, #f2f2f2);
+}
+
+#scrollLeft {
+  background: red;
+  background: -webkit-linear-gradient(90deg, #2E2E2E, #f2f2f2);
+  background: -o-linear-gradient(90deg, #2E2E2E, #f2f2f2);
+  background: -moz-linear-gradient(90deg, #2E2E2E, #f2f2f2);
+  background: linear-gradient(90deg, #2E2E2E, #f2f2f2);
+}
+
+#scrollRight i {
+  display: none;
+}
+
+#scrollRight:hover i {
+  display: block;
+}
+
+#scrollLeft i {
+  display: none;
+}
+
+#scrollLeft:hover i {
+  display: block;
+}
+
+#new-clip-button {
+  background-color: #FF9E23;
+  margin: 30px auto;
+  display: none;
+  width: 80px;
+  height: 80px;
+  transition: all .3s;
+}
+
+#new-clip-button:hover {
+  transform: scale(1.1)
+}
+
+#clips-display {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.spinner {
+  /*   display: none; */
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin: 200px auto;
+}
+
+.double-bounce1,
+.double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0.0)
+  }
+  50% {
+    -webkit-transform: scale(1.0)
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  }
+  50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #boxArt #game5 {
+    display: none;
+  }
+  @media screen and (max-width: 840px) {
+    #boxArt #game4 {
+      display: none;
+    }
+    @media screen and (max-width: 690px) {
+      #boxArt #game3 {
+        display: none;
+      }
+      @media screen and (max-width: 540px) {
+        #boxArt #game3 {
+          display: none;
+        }
+        @media screen and (max-width: 500px) {
+          #boxArt #game2 {
+            display: none;
+          }
+        }
+        
+@media screen and (max-width: 300px) {
+  #scrollLeft, #scrollRight {
+    height: 50px;
+    margin: 15px;
+  }
+}
+        
+        @media screen and (max-width: 400px) {
+          
+        }
